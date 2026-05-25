@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash /Users/hyoon/Lab/fs-vibe-coding-p1c1/.claude/hooks/pre-commit.sh"
+            "command": "bash .claude/hooks/pre-commit.sh"
           }
         ]
       }
