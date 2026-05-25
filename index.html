@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mode-label" id="modeLabel" aria-live="polite">WORK</div>
+    <div class="timer" id="timer">25:00</div>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <details class="settings">
+      <summary>⚙ Settings</summary>
+      <div class="settings-body">
+        <label>
+          작업 시간 (분)
+          <input type="number" id="workInput" min="1" max="60" value="25">
+        </label>
+        <label>
+          휴식 시간 (분)
+          <input type="number" id="breakInput" min="1" max="60" value="5">
+        </label>
+        <button id="saveBtn">저장</button>
+      </div>
+    </details>
+
+    <div class="log-panel">
+      <div class="log-header">
+        <span>오늘의 세션</span>
+        <span id="logCount">0개</span>
+      </div>
+      <ul id="logList"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
