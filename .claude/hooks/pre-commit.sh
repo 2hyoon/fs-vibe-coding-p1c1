@@ -7,7 +7,7 @@ if ! echo "$COMMAND" | grep -qE "git commit"; then
   exit 0
 fi
 
-cd /Users/hyoon/Lab/fs-vibe-coding-p1c1
+cd "$(git rev-parse --show-toplevel)"
 
 echo "🔍 Lint..."
 npm run lint
